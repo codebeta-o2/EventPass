@@ -117,14 +117,14 @@ npm install
 #### Generate Typescript Bindings (Optional)
 If you update and re-deploy the contract, you will need to regenerate the TypeScript bindings.
 ```bash
-soroban contract bindings typescript --network testnet --contract-id <YOUR_CONTRACT_ID> --output-dir ./src/contracts/event_pass
+soroban contract bindings typescript --network testnet --contract-id CBNWAEM73P6ZXULQEW227Z2JE5YSZPMEIXH2A2YS6ZKVX4YMJE3ZOAWS --output-dir ./src/contracts/event_pass
 ```
 *Note: Make sure to navigate to `./src/contracts/event_pass` and run `npm install && npm run build` to compile the newly generated bindings.*
 
 #### Environment Variables
 Ensure you have a `.env` file set up in the `/frontend` directory:
 ```env
-VITE_STELLAR_RPC_URL="<YOUR_STELLAR_RPC_URL>"
+VITE_STELLAR_RPC_URL="CBNWAEM73P6ZXULQEW227Z2JE5YSZPMEIXH2A2YS6ZKVX4YMJE3ZOAWS"
 VITE_PAYMENT_ASSET_ID="<YOUR_PAYMENT_ASSET_ID>"
 VITE_CONTRACT_ID="<YOUR_CONTRACT_ID>"
 VITE_BACKEND_URL="http://localhost:8000"
